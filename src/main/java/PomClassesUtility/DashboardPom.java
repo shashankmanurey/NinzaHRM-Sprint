@@ -28,6 +28,13 @@ public class DashboardPom {
     @FindBy(css = "div.chart-card-right")
     private WebElement projectsChart;
 
+    @FindBy (xpath = "//div[@title='Logout']")
+    private WebElement logoutBtn;
+
+    public void getLogout()
+    {
+        logoutBtn.click();
+    }
     public boolean isEmployeeschartDisplayed()
     {
         return wait.until(ExpectedConditions.visibilityOf(employeesChart)).isDisplayed();

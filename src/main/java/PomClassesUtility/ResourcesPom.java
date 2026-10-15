@@ -2,11 +2,14 @@ package PomClassesUtility;
 
 import java.time.Duration;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class ResourcesPom {
@@ -20,6 +23,9 @@ public class ResourcesPom {
     }
     @FindBy (xpath = "//a[text()='Resources']")
     private WebElement resourcesBtm;
+
+    @FindBy (xpath = "//h2[text()='View']")
+    private WebElement viewResources;
 
     @FindBy (xpath = "//select[@class='form-control']")
     private WebElement search;
@@ -54,9 +60,16 @@ public class ResourcesPom {
     @FindBy (xpath = "//i[@title='Delete']")
     private WebElement deleteBtn;
 
+    @FindBy (xpath = "//div[@class='Toastify__toast Toastify__toast--error']")
+    private WebElement error;
+
     public void getResourcesBtn()
     {
         resourcesBtm.click();
+    }
+    public boolean viewRes()
+    {
+        return viewResources.isDisplayed();
     }
     public void getSearch()
     {
@@ -74,9 +87,9 @@ public class ResourcesPom {
     {
         uploadBtn.click();
     }
-    public void getChoose()
+    public void getChoose(String value)
     {
-        chooseFile.click();
+        chooseFile.sendKeys(value);
     }
     public void getCancelUpload()
     {
@@ -84,7 +97,7 @@ public class ResourcesPom {
     }
     public void getUploadFile()
     {
-        uploadFile.click();
+        wait.until(ExpectedConditions.elementToBeClickable(uploadFile)).click();
     }
     public void getDeleteBtn()
     {
@@ -93,6 +106,56 @@ public class ResourcesPom {
     public void getDownloadBtn()
     {
         downloadBtn.click();
+    }
+    public void searchFileByName(String fileName)
+    {
+        wait.until(ExpectedConditions.visibilityOf(search));
+
+        Select dropdown = new Select(search);
+        dropdown.selectByVisibleText("Search by File Name");
+
+        WebElement name = wait.until(ExpectedConditions.visibilityOf(typeFileName));
+
+        name.clear();
+        name.sendKeys(fileName);
+    }
+    public void searchFileByDate(String date)
+    {
+        wait.until(ExpectedConditions.visibilityOf(search));
+
+        Select dropdown = new Select(search);
+        dropdown.selectByVisibleText("Search by Upload Date");
+
+        WebElement dateField = wait.until(ExpectedConditions.visibilityOf(typeFileDate));
+
+        dateField.clear();
+        dateField.sendKeys(date);
+    }
+    public boolean isFileDisplayedByDate(String fileName)
+    {
+        By fileRow = By.xpath("//div[@class='table-wrapper']//tr[.//*[normalize-space(.)='"+ fileName + "']]");
+        try
+        {
+            wait.until(ExpectedConditions.visibilityOfElementLocated(fileRow));
+            return true;
+        }
+        catch (TimeoutException e)
+        {
+            return false;
+        }
+    }
+    public boolean isFileDisplayed(String fileName)
+    {
+        By fileRow = By.xpath("//div[@class='table-wrapper']//tr[.//*[normalize-space(.)='"+ fileName + "']]");
+        try
+        {
+            wait.until(ExpectedConditions.visibilityOfElementLocated(fileRow));
+            return true;
+        }
+        catch (TimeoutException e)
+        {
+            return false;
+        }
     }
     public void typeFileName(String value)
     {
@@ -105,6 +168,14 @@ public class ResourcesPom {
         WebElement date = wait.until(ExpectedConditions.visibilityOf(typeFileDate));
         date.clear();
         date.sendKeys(value);
+    }
+    public String getError()
+    {
+        return error.getText();
+    }
+    public boolean alreadyExist()
+    {
+        return error.isDisplayed();
     }
 
 }

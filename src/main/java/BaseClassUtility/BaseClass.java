@@ -154,9 +154,9 @@ public class BaseClass {
 
         if (!loggedIn) 
         {
-            throw new RuntimeException("Login failed: Products page was not displayed. Current URL: "+ driver.getCurrentUrl());
+            throw new RuntimeException("Login failed: Dashboard page was not displayed. Current URL: "+ driver.getCurrentUrl());
         }
-         Reporter.log("Logged in successfully and navigated to Product Page", true);
+         Reporter.log("Logged in successfully and navigated to next Page", true);
     }
 
     @AfterMethod(alwaysRun = true)
