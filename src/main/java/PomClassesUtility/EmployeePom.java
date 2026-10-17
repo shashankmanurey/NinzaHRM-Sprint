@@ -98,6 +98,27 @@ public class EmployeePom
     @FindBy (xpath = "//button[@class='close']")
     private WebElement closeBtn;
 
+    @FindBy (xpath = "//input[@value='Delete']")
+    private WebElement confirmDelete;
+
+    @FindBy (xpath = "//div[@class='Toastify__toast-container Toastify__toast-container--top-right']")
+    private WebElement deletePopUp;
+
+    @FindBy (xpath = "(//input[@type='text'])[2]")
+    private WebElement editName;
+
+    @FindBy (xpath = "//input[@type='email']")
+    private WebElement editEmail;
+
+    @FindBy (xpath = "//input[@type='number']")
+    private WebElement editExp;
+
+    @FindBy (xpath = "(//input[@type='text'])[3]")
+    private WebElement editPhone;
+
+    @FindBy (xpath = "//input[@value='Save']")
+    private WebElement saveEdits;
+
     public void getEmployee()
     {
         wait.until(ExpectedConditions.elementToBeClickable(employeeBtm)).click();
@@ -158,13 +179,21 @@ public class EmployeePom
     {
         closeBtn.click();
     }
+    public void getConfirmDeleteSingle()
+    {
+        wait.until(ExpectedConditions.elementToBeClickable(confirmDelete)).click();
+    }
+    public boolean getConfirmDeletePopup()
+    {
+        return wait.until(ExpectedConditions.visibilityOf(deletePopUp)).isDisplayed();
+    }
 
-        public boolean isSearchVisible() {
-        try {
-            return wait.until(ExpectedConditions.visibilityOf(search)).isDisplayed();
+    public boolean isSearchVisible() {
+    try {
+        return wait.until(ExpectedConditions.visibilityOf(search)).isDisplayed();
         } catch (org.openqa.selenium.TimeoutException e) {
-            return false;
-        }
+        return false;
+    }
     }
     public void getTypeName(String value)
     {
@@ -229,5 +258,30 @@ public class EmployeePom
     public void selectEmployeeByUsername(String username) {
         driver.findElement(By.xpath("//*[normalize-space()='" + username + "']/ancestor::tr//input[@type='checkbox']")).click();
     }
-
+    public void clickEditByValue(String value)
+    {
+        By editIcon = By.xpath("//tr[.//td[normalize-space()='" + value+ "']]//a[contains(@class,'edit')]");
+        wait.until(ExpectedConditions.elementToBeClickable(editIcon)).click();
+    }
+    public void clickDeleteByValue(String value)
+    {
+        By deleteIcon = By.xpath("//tr[.//td[normalize-space()='" + value+ "']]//a[contains(@class,'delete')]");
+        wait.until(ExpectedConditions.elementToBeClickable(deleteIcon)).click();
+    }
+    public void editEmpDetails(String name, String email, String exp, String phone) throws InterruptedException
+    {
+        editName.clear();
+        editEmail.clear();
+        editExp.clear();
+        editPhone.clear();
+        Thread.sleep(3000);
+        editName.sendKeys(name);
+        editEmail.sendKeys(email);
+        editExp.sendKeys(exp);
+        editPhone.sendKeys(phone);
+    }
+    public void getEditEmps()
+    {
+        saveEdits.click();
+    }
 }

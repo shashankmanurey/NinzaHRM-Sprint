@@ -11,7 +11,7 @@ import PomClassesUtility.LoginPom;
 
 public class LoginPositive extends BaseClass {
 
-    //TC-Login-01
+    // TC-Login-01
     // Verify sign-in page loads with all controls
     @Test(groups = {"smoke"})
     public void verifyIsDisplayed()
@@ -77,8 +77,5 @@ public class LoginPositive extends BaseClass {
         Assert.assertTrue(login.isLoginButtonDisplayed(), "User is not loged out of the session even after clicking logout");
         Reporter.log("User successfully loged out of the session after clicking logout button");
 
-
     }
-
-    
 }
