@@ -1,0 +1,313 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>17/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Fri Oct 16 15:14:16 IST 2026</td>
+</tr>
+<tr><td>Total time:</td><td>272 seconds (272630 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='DashboardScript.DashboardNegative.verifyReopenDash()'><b>verifyReopenDash</b><br>Test class: DashboardScript.DashboardNegative<br/>
+<a href="#Output-248447628" onClick='toggleBox("Output-248447628", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-248447628" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-248447628">
+Employees chart is successfully displayed<br/>
+Projects chart is successfully displayed<br/>
+Logout successfully occured from dashboard page<br/>
+User cannot access Dashboard page after logout successfully occured from dashboard page, Dashboard access denied after logout<br/>
+</div>
+</td>
+<td></td>
+<td>16</td>
+<td>DashboardScript.DashboardNegative@16d04d3d</td></tr>
+<tr>
+<td title='ResourcesScript.ResourcesPositive.uploadFile()'><b>uploadFile</b><br>Test class: ResourcesScript.ResourcesPositive<br/>
+<a href="#Output-840042838" onClick='toggleBox("Output-840042838", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-840042838" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-840042838">
+Resources page was successfully displayed after login<br/>
+Upload submitted for file<br/>
+File uploaded and verified successfully: BatchExecution_TestNG_Report.html<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>ResourcesScript.ResourcesPositive@7e07db1f</td></tr>
+<tr>
+<td title='DashboardScript.DashboardPositive.verifyDashLogout()'><b>verifyDashLogout</b><br>Test class: DashboardScript.DashboardPositive<br/>
+<a href="#Output-940448009" onClick='toggleBox("Output-940448009", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-940448009" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-940448009">
+Employees chart is successfully displayed<br/>
+Projects chart is successfully displayed<br/>
+Logout successfully occured from dashboard page<br/>
+</div>
+</td>
+<td></td>
+<td>8</td>
+<td>DashboardScript.DashboardPositive@6b927fb</td></tr>
+<tr>
+<td title='EmployeeScript.EmployeeNegative.verifyEmpAlreadyExist()'><b>verifyEmpAlreadyExist</b><br>Test class: EmployeeScript.EmployeeNegative<br/>
+<a href="#Output-321080009" onClick='toggleBox("Output-321080009", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-321080009" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-321080009">
+Application rejected duplicate employee details.<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>EmployeeScript.EmployeeNegative@36bc55de</td></tr>
+<tr>
+<td title='EmployeeScript.EmployeePositive.verifyAddEmpPage()'><b>verifyAddEmpPage</b><br>Test class: EmployeeScript.EmployeePositive<br/>
+<a href="#Output-1331441841" onClick='toggleBox("Output-1331441841", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1331441841" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1331441841">
+Add New Employee form opens after clicking Add New Employee<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>EmployeeScript.EmployeePositive@1189dd52</td></tr>
+<tr>
+<td title='ResourcesScript.ResourcesNegative.fileExist()'><b>fileExist</b><br>Test class: ResourcesScript.ResourcesNegative<br/>
+<a href="#Output-1042643178" onClick='toggleBox("Output-1042643178", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1042643178" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1042643178">
+Resources page was successfully displayed after login<br/>
+Already existing file cannot be uploaded<br/>
+Error message displayed: File Name Already Exist
+✖︎<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>ResourcesScript.ResourcesNegative@49ec71f8</td></tr>
+<tr>
+<td title='LoginScript.LoginPositive.validLoginTest()'><b>validLoginTest</b><br>Test class: LoginScript.LoginPositive<br/>
+<a href="#Output-1537371824" onClick='toggleBox("Output-1537371824", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1537371824" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1537371824">
+Valid Login Successful<br/>
+Username = rmgyantra<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>LoginScript.LoginPositive@359f7cdf</td></tr>
+<tr>
+<td title='LoginScript.LoginNegative.blankPassword()'><b>blankPassword</b><br>Test class: LoginScript.LoginNegative<br/>
+<a href="#Output-59320794" onClick='toggleBox("Output-59320794", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-59320794" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-59320794">
+Invalid credentials<br/>
+Username = rmgyantra Password = <br/>
+Invalid credential<br/>
+Login did not occur due to blank<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>LoginScript.LoginNegative@564fabc8</td></tr>
+<tr>
+<td title='ResourcesScript.ResourcesNegative.nonExistFile()'><b>nonExistFile</b><br>Test class: ResourcesScript.ResourcesNegative<br/>
+<a href="#Output-1944665146" onClick='toggleBox("Output-1944665146", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1944665146" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1944665146">
+Resources page was successfully displayed after login<br/>
+Non existent file name is not displayed<br/>
+</div>
+</td>
+<td></td>
+<td>20</td>
+<td>ResourcesScript.ResourcesNegative@49ec71f8</td></tr>
+<tr>
+<td title='DashboardScript.DashboardPositive.verifyDashboard()'><b>verifyDashboard</b><br>Test class: DashboardScript.DashboardPositive<br/>
+<a href="#Output-740950652" onClick='toggleBox("Output-740950652", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-740950652" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-740950652">
+Employees chart is successfully displayed<br/>
+Projects chart is successfully displayed<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>DashboardScript.DashboardPositive@6b927fb</td></tr>
+<tr>
+<td title='ResourcesScript.ResourcesPositive.verifyResPage()'><b>verifyResPage</b><br>Test class: ResourcesScript.ResourcesPositive<br/>
+<a href="#Output-1762260670" onClick='toggleBox("Output-1762260670", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1762260670" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1762260670">
+Resources page was successfully opened after login<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>ResourcesScript.ResourcesPositive@7e07db1f</td></tr>
+<tr>
+<td title='EmployeeScript.EmployeePositive.verifyEmpPage()'><b>verifyEmpPage</b><br>Test class: EmployeeScript.EmployeePositive<br/>
+<a href="#Output-1231875515" onClick='toggleBox("Output-1231875515", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1231875515" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1231875515">
+Manage Employees is displayed after clicking on Employees<br/>
+Employees table is displayed after clicking on Employees<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>EmployeeScript.EmployeePositive@1189dd52</td></tr>
+<tr>
+<td title='LoginScript.LoginNegative.emptyFields()'><b>emptyFields</b><br>Test class: LoginScript.LoginNegative<br/>
+<a href="#Output-1531514206" onClick='toggleBox("Output-1531514206", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1531514206" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1531514206">
+Invalid credentials<br/>
+Username =  Password = <br/>
+Invalid credentials<br/>
+Login did not occur due to blank credentials<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>LoginScript.LoginNegative@564fabc8</td></tr>
+<tr>
+<td title='LoginScript.LoginNegative.invalidUsername()'><b>invalidUsername</b><br>Test class: LoginScript.LoginNegative<br/>
+<a href="#Output-1578964260" onClick='toggleBox("Output-1578964260", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1578964260" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1578964260">
+Invalid credentials<br/>
+Username = sha  Password = rmgy@9999<br/>
+Invalid credential<br/>
+Login did not occur due to invalid username<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>LoginScript.LoginNegative@564fabc8</td></tr>
+<tr>
+<td title='EmployeeScript.EmployeePositive.addNewEmp()'><b>addNewEmp</b><br>Test class: EmployeeScript.EmployeePositive<br/>
+<a href="#Output-1178953630" onClick='toggleBox("Output-1178953630", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1178953630" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1178953630">
+Added new valid employee with all details of employee:shank<br/>
+</div>
+</td>
+<td></td>
+<td>28</td>
+<td>EmployeeScript.EmployeePositive@1189dd52</td></tr>
+<tr>
+<td title='LoginScript.LoginPositive.logoutEndsSession()'><b>logoutEndsSession</b><br>Test class: LoginScript.LoginPositive<br/>
+<a href="#Output-65310008" onClick='toggleBox("Output-65310008", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-65310008" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-65310008">
+Valid Login Successful<br/>
+Username = rmgyantra<br/>
+User successfully loged out of the session after clicking logout button<br/>
+</div>
+</td>
+<td></td>
+<td>11</td>
+<td>LoginScript.LoginPositive@359f7cdf</td></tr>
+<tr>
+<td title='LoginScript.LoginPositive.verifyIsDisplayed()'><b>verifyIsDisplayed</b><br>Test class: LoginScript.LoginPositive<br/>
+<a href="#Output-632115057" onClick='toggleBox("Output-632115057", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-632115057" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-632115057">
+Username field is displayed<br/>
+Password field is displayed<br/>
+Signin button is displayed<br/>
+Get Demo is displayed<br/>
+All the fields i.e Username, Password, Signin Button, Get Demo in login page is successfully displayed<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>LoginScript.LoginPositive@359f7cdf</td></tr>
+</table><p>
+</body>
+</html>

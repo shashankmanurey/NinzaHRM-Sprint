@@ -1,0 +1,180 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>7/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Fri Oct 16 15:07:33 IST 2026</td>
+</tr>
+<tr><td>Total time:</td><td>73 seconds (73890 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td>negative </td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='EmployeeScript.EmployeeNegative.verifyEmpAlreadyExist()'><b>verifyEmpAlreadyExist</b><br>Test class: EmployeeScript.EmployeeNegative<br/>
+<a href="#Output-1753885705" onClick='toggleBox("Output-1753885705", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1753885705" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1753885705">
+Application rejected duplicate employee details.<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>EmployeeScript.EmployeeNegative@436813f3</td></tr>
+<tr>
+<td title='LoginScript.LoginNegative.blankPassword()'><b>blankPassword</b><br>Test class: LoginScript.LoginNegative<br/>
+<a href="#Output-1877317084" onClick='toggleBox("Output-1877317084", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1877317084" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1877317084">
+Invalid credentials<br/>
+Username = rmgyantra Password = <br/>
+Invalid credential<br/>
+Login did not occur due to blank<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>LoginScript.LoginNegative@77847718</td></tr>
+<tr>
+<td title='ResourcesScript.ResourcesNegative.fileExist()'><b>fileExist</b><br>Test class: ResourcesScript.ResourcesNegative<br/>
+<a href="#Output-1108706191" onClick='toggleBox("Output-1108706191", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1108706191" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1108706191">
+Resources page was successfully displayed after login<br/>
+Already existing file cannot be uploaded<br/>
+Error message displayed: File Name Already Exist
+✖︎<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>ResourcesScript.ResourcesNegative@79924b</td></tr>
+<tr>
+<td title='LoginScript.LoginNegative.invalidUsername()'><b>invalidUsername</b><br>Test class: LoginScript.LoginNegative<br/>
+<a href="#Output-1442883034" onClick='toggleBox("Output-1442883034", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1442883034" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1442883034">
+Invalid credentials<br/>
+Username = sha  Password = rmgy@9999<br/>
+Invalid credential<br/>
+Login did not occur due to invalid username<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>LoginScript.LoginNegative@77847718</td></tr>
+<tr>
+<td title='DashboardScript.DashboardNegative.verifyReopenDash()'><b>verifyReopenDash</b><br>Test class: DashboardScript.DashboardNegative<br/>
+<a href="#Output-511646132" onClick='toggleBox("Output-511646132", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-511646132" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-511646132">
+Employees chart is successfully displayed<br/>
+Projects chart is successfully displayed<br/>
+Logout successfully occured from dashboard page<br/>
+User cannot access Dashboard page after logout successfully occured from dashboard page, Dashboard access denied after logout<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>DashboardScript.DashboardNegative@3febb011</td></tr>
+<tr>
+<td title='LoginScript.LoginNegative.emptyFields()'><b>emptyFields</b><br>Test class: LoginScript.LoginNegative<br/>
+<a href="#Output-494842224" onClick='toggleBox("Output-494842224", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-494842224" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-494842224">
+Invalid credentials<br/>
+Username =  Password = <br/>
+Invalid credentials<br/>
+Login did not occur due to blank credentials<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>LoginScript.LoginNegative@77847718</td></tr>
+<tr>
+<td title='ResourcesScript.ResourcesNegative.nonExistFile()'><b>nonExistFile</b><br>Test class: ResourcesScript.ResourcesNegative<br/>
+<a href="#Output-1011481270" onClick='toggleBox("Output-1011481270", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1011481270" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1011481270">
+Resources page was successfully displayed after login<br/>
+Non existent file name is not displayed<br/>
+</div>
+</td>
+<td></td>
+<td>20</td>
+<td>ResourcesScript.ResourcesNegative@79924b</td></tr>
+</table><p>
+</body>
+</html>

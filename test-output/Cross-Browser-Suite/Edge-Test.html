@@ -1,0 +1,430 @@
+<html>
+<head>
+<title>TestNG:  Edge-Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Edge-Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>10/3/0</td>
+</tr><tr>
+<td>Started on:</td><td>Fri Oct 16 15:58:28 IST 2026</td>
+</tr>
+<tr><td>Total time:</td><td>90 seconds (90738 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='EmployeeScript.EmployeePositive.verifyAddEmpPage()'><b>verifyAddEmpPage</b><br>Test class: EmployeeScript.EmployeePositive</td>
+<td><div><pre>java.lang.AssertionError: Add New Employee form does not open after clicking Add New Employee expected [true] but found [false]
+	at EmployeeScript.EmployeePositive.verifyAddEmpPage(EmployeePositive.java:45)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace274720798", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace274720798'><pre>java.lang.AssertionError: Add New Employee form does not open after clicking Add New Employee expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at EmployeeScript.EmployeePositive.verifyAddEmpPage(EmployeePositive.java:45)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>EmployeeScript.EmployeePositive@313ac989</td></tr>
+<tr>
+<td title='EmployeeScript.EmployeeNegative.verifyEmpAlreadyExist()'><b>verifyEmpAlreadyExist</b><br>Test class: EmployeeScript.EmployeeNegative</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (452, 507)
+  (Session info: MicrosoftEdge=155.0.4283.45)
+Build info: version: &apos;4.46.0&apos;, revision: &apos;df5a634 df5a6341cbb5f8f06b836bd595752775627c80dc&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;25&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [49956c1d1913b95ab2de648f952eeeab, clickElement {id=f.205A635DE6C2EA181EC500DFC06A0DC6.d.FC210126102874CCE74AA35B3775DF5D.e.89}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 155.0.4283.45, fedcm:accounts: true, goog:processID: 7288, ms:edgeOptions: {debuggerAddress: localhost:43407}, msedge: {msedgedriverVersion: 155.0.4283.60 (fb6491367cfa..., userDataDir: C:\Users\91888\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:43407/devtoo..., se:cdpVersion: 155.0.4283.45, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (49956c1d1913b95ab2de648f952eeeab)] -&gt; xpath: //input[@value=&apos;Add&apos;]]
+Session ID: 49956c1d1913b95ab2de648f952eeeab
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:143)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:217)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:626)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:225)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:79)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy18.click(Unknown Source)
+	at PomClassesUtility.EmployeePom.getAddBtn(EmployeePom.java:151)
+	at EmployeeScript.EmployeeNegative.verifyEmpAlreadyExist(EmployeeNegative.java:41)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2080388573", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2080388573'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (452, 507)
+  (Session info: MicrosoftEdge=155.0.4283.45)
+Build info: version: &apos;4.46.0&apos;, revision: &apos;df5a634 df5a6341cbb5f8f06b836bd595752775627c80dc&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;25&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [49956c1d1913b95ab2de648f952eeeab, clickElement {id=f.205A635DE6C2EA181EC500DFC06A0DC6.d.FC210126102874CCE74AA35B3775DF5D.e.89}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 155.0.4283.45, fedcm:accounts: true, goog:processID: 7288, ms:edgeOptions: {debuggerAddress: localhost:43407}, msedge: {msedgedriverVersion: 155.0.4283.60 (fb6491367cfa..., userDataDir: C:\Users\91888\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:43407/devtoo..., se:cdpVersion: 155.0.4283.45, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (49956c1d1913b95ab2de648f952eeeab)] -&gt; xpath: //input[@value=&apos;Add&apos;]]
+Session ID: 49956c1d1913b95ab2de648f952eeeab
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:143)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:217)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:626)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:225)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:79)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy18.click(Unknown Source)
+	at PomClassesUtility.EmployeePom.getAddBtn(EmployeePom.java:151)
+	at EmployeeScript.EmployeeNegative.verifyEmpAlreadyExist(EmployeeNegative.java:41)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>2</td>
+<td>EmployeeScript.EmployeeNegative@4562e04d</td></tr>
+<tr>
+<td title='EmployeeScript.EmployeePositive.addNewEmp()'><b>addNewEmp</b><br>Test class: EmployeeScript.EmployeePositive</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (452, 507)
+  (Session info: MicrosoftEdge=155.0.4283.45)
+Build info: version: &apos;4.46.0&apos;, revision: &apos;df5a634 df5a6341cbb5f8f06b836bd595752775627c80dc&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;25&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [b1d7fa7720c50ff3e36aad37ccc3fc88, clickElement {id=f.2E6DF2F85EA7C4A519630FA8654B5F53.d.249FEB51C15D4DB02C7A73956C3E101E.e.100}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 155.0.4283.45, fedcm:accounts: true, goog:processID: 12104, ms:edgeOptions: {debuggerAddress: localhost:29233}, msedge: {msedgedriverVersion: 155.0.4283.60 (fb6491367cfa..., userDataDir: C:\Users\91888\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:29233/devtoo..., se:cdpVersion: 155.0.4283.45, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (b1d7fa7720c50ff3e36aad37ccc3fc88)] -&gt; xpath: //input[@value=&apos;Add&apos;]]
+Session ID: b1d7fa7720c50ff3e36aad37ccc3fc88
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:143)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:217)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:626)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:225)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:79)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy18.click(Unknown Source)
+	at PomClassesUtility.EmployeePom.getAddBtn(EmployeePom.java:151)
+	at EmployeeScript.EmployeePositive.addNewEmp(EmployeePositive.java:72)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace320559316", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace320559316'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (452, 507)
+  (Session info: MicrosoftEdge=155.0.4283.45)
+Build info: version: &apos;4.46.0&apos;, revision: &apos;df5a634 df5a6341cbb5f8f06b836bd595752775627c80dc&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;25&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [b1d7fa7720c50ff3e36aad37ccc3fc88, clickElement {id=f.2E6DF2F85EA7C4A519630FA8654B5F53.d.249FEB51C15D4DB02C7A73956C3E101E.e.100}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 155.0.4283.45, fedcm:accounts: true, goog:processID: 12104, ms:edgeOptions: {debuggerAddress: localhost:29233}, msedge: {msedgedriverVersion: 155.0.4283.60 (fb6491367cfa..., userDataDir: C:\Users\91888\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:29233/devtoo..., se:cdpVersion: 155.0.4283.45, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[EdgeDriver: MicrosoftEdge on windows (b1d7fa7720c50ff3e36aad37ccc3fc88)] -&gt; xpath: //input[@value=&apos;Add&apos;]]
+Session ID: b1d7fa7720c50ff3e36aad37ccc3fc88
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:143)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:217)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:626)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:225)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:79)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy18.click(Unknown Source)
+	at PomClassesUtility.EmployeePom.getAddBtn(EmployeePom.java:151)
+	at EmployeeScript.EmployeePositive.addNewEmp(EmployeePositive.java:72)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>2</td>
+<td>EmployeeScript.EmployeePositive@313ac989</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='LoginScript.LoginNegative.blankPassword()'><b>blankPassword</b><br>Test class: LoginScript.LoginNegative<br/>
+<a href="#Output-894818308" onClick='toggleBox("Output-894818308", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-894818308" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-894818308">
+Invalid credentials<br/>
+Username = rmgyantra Password = <br/>
+Invalid credential<br/>
+Login did not occur due to blank<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>LoginScript.LoginNegative@2a65fe7c</td></tr>
+<tr>
+<td title='LoginScript.LoginNegative.invalidUsername()'><b>invalidUsername</b><br>Test class: LoginScript.LoginNegative<br/>
+<a href="#Output-1851422703" onClick='toggleBox("Output-1851422703", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1851422703" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1851422703">
+Invalid credentials<br/>
+Username = sha  Password = rmgy@9999<br/>
+Invalid credential<br/>
+Login did not occur due to invalid username<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>LoginScript.LoginNegative@2a65fe7c</td></tr>
+<tr>
+<td title='LoginScript.LoginPositive.logoutEndsSession()'><b>logoutEndsSession</b><br>Test class: LoginScript.LoginPositive<br/>
+<a href="#Output-566860479" onClick='toggleBox("Output-566860479", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-566860479" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-566860479">
+Valid Login Successful<br/>
+Username = rmgyantra<br/>
+User successfully loged out of the session after clicking logout button<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>LoginScript.LoginPositive@145f66e3</td></tr>
+<tr>
+<td title='DashboardScript.DashboardPositive.verifyDashLogout()'><b>verifyDashLogout</b><br>Test class: DashboardScript.DashboardPositive<br/>
+<a href="#Output-1567317309" onClick='toggleBox("Output-1567317309", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1567317309" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1567317309">
+Employees chart is successfully displayed<br/>
+Projects chart is successfully displayed<br/>
+Logout successfully occured from dashboard page<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>DashboardScript.DashboardPositive@3023df74</td></tr>
+<tr>
+<td title='LoginScript.LoginPositive.verifyIsDisplayed()'><b>verifyIsDisplayed</b><br>Test class: LoginScript.LoginPositive<br/>
+<a href="#Output-409848581" onClick='toggleBox("Output-409848581", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-409848581" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-409848581">
+Username field is displayed<br/>
+Password field is displayed<br/>
+Signin button is displayed<br/>
+Get Demo is displayed<br/>
+All the fields i.e Username, Password, Signin Button, Get Demo in login page is successfully displayed<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>LoginScript.LoginPositive@145f66e3</td></tr>
+<tr>
+<td title='DashboardScript.DashboardNegative.verifyReopenDash()'><b>verifyReopenDash</b><br>Test class: DashboardScript.DashboardNegative<br/>
+<a href="#Output-1804109458" onClick='toggleBox("Output-1804109458", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1804109458" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1804109458">
+Employees chart is successfully displayed<br/>
+Projects chart is successfully displayed<br/>
+Logout successfully occured from dashboard page<br/>
+User cannot access Dashboard page after logout successfully occured from dashboard page, Dashboard access denied after logout<br/>
+</div>
+</td>
+<td></td>
+<td>10</td>
+<td>DashboardScript.DashboardNegative@4135c3b</td></tr>
+<tr>
+<td title='EmployeeScript.EmployeePositive.verifyEmpPage()'><b>verifyEmpPage</b><br>Test class: EmployeeScript.EmployeePositive<br/>
+<a href="#Output-1603095377" onClick='toggleBox("Output-1603095377", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1603095377" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1603095377">
+Manage Employees is displayed after clicking on Employees<br/>
+Employees table is displayed after clicking on Employees<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>EmployeeScript.EmployeePositive@313ac989</td></tr>
+<tr>
+<td title='LoginScript.LoginPositive.validLoginTest()'><b>validLoginTest</b><br>Test class: LoginScript.LoginPositive<br/>
+<a href="#Output-2120816164" onClick='toggleBox("Output-2120816164", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2120816164" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2120816164">
+Valid Login Successful<br/>
+Username = rmgyantra<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>LoginScript.LoginPositive@145f66e3</td></tr>
+<tr>
+<td title='LoginScript.LoginNegative.emptyFields()'><b>emptyFields</b><br>Test class: LoginScript.LoginNegative<br/>
+<a href="#Output-1645577752" onClick='toggleBox("Output-1645577752", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1645577752" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1645577752">
+Invalid credentials<br/>
+Username =  Password = <br/>
+Invalid credentials<br/>
+Login did not occur due to blank credentials<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>LoginScript.LoginNegative@2a65fe7c</td></tr>
+<tr>
+<td title='DashboardScript.DashboardPositive.verifyDashboard()'><b>verifyDashboard</b><br>Test class: DashboardScript.DashboardPositive<br/>
+<a href="#Output-903353943" onClick='toggleBox("Output-903353943", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-903353943" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-903353943">
+Employees chart is successfully displayed<br/>
+Projects chart is successfully displayed<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>DashboardScript.DashboardPositive@3023df74</td></tr>
+</table><p>
+</body>
+</html>
