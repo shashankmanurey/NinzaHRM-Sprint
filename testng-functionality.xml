@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Functionality_Suite">
+  <test thread-count="5" name="Test">
+  <groups>
+	  <run>
+	  <include name="functionality"></include>
+	  </run>
+  </groups>
+    <classes>
+      <class name="ResourcesScript.ResourcesNegative"/>
+      <class name="EmployeeScript.EmployeeNegative"/>
+      <class name="DashboardScript.DashboardPositive"/>
+      <class name="DashboardScript.DashboardNegative"/>
+      <class name="ResourcesScript.ResourcesPositive"/>
+      <class name="EmployeeScript.EmployeePositive"/>
+      <class name="LoginScript.LoginPositive"/>
+      <class name="LoginScript.LoginNegative"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Functionality_Suit -->
