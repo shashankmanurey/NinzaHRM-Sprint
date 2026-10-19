@@ -57,7 +57,7 @@
   </dependency>
   </dependencies>
 
-  <!-- <profiles>
+  <profiles>
 		<profile>
 			<id>BVAT</id>
 			<build>
@@ -84,7 +84,7 @@
 						<artifactId>maven-surefire-plugin</artifactId>
 						<configuration>
 							<suiteXmlFiles>
-								<suiteXmlFile>BatchExecution.xml</suiteXmlFile>
+								<suiteXmlFile>testng-batch_execution.xml</suiteXmlFile>
 							</suiteXmlFiles>
 						</configuration>
 					</plugin>
@@ -101,7 +101,7 @@
 						<artifactId>maven-surefire-plugin</artifactId>
 						<configuration>
 							<suiteXmlFiles>
-								<suiteXmlFile>testng-cross-browser.xml</suiteXmlFile>
+								<suiteXmlFile>testng-cross_browser.xml</suiteXmlFile>
 							</suiteXmlFiles>
 						</configuration>
 					</plugin>
@@ -118,7 +118,7 @@
 						<artifactId>maven-surefire-plugin</artifactId>
 						<configuration>
 							<suiteXmlFiles>
-								<suiteXmlFile>testng-Functionality.xml</suiteXmlFile>
+								<suiteXmlFile>testng-functionality.xml</suiteXmlFile>
 							</suiteXmlFiles>
 						</configuration>
 					</plugin>
@@ -135,7 +135,7 @@
 						<artifactId>maven-surefire-plugin</artifactId>
 						<configuration>
 							<suiteXmlFiles>
-								<suiteXmlFile>testng-Integration.xml</suiteXmlFile>
+								<suiteXmlFile>testng-integration.xml</suiteXmlFile>
 							</suiteXmlFiles>
 						</configuration>
 					</plugin>
@@ -152,7 +152,7 @@
 						<artifactId>maven-surefire-plugin</artifactId>
 						<configuration>
 							<suiteXmlFiles>
-								<suiteXmlFile>testng-Negative.xml</suiteXmlFile>
+								<suiteXmlFile>testng-negative.xml</suiteXmlFile>
 							</suiteXmlFiles>
 						</configuration>
 					</plugin>
@@ -169,7 +169,7 @@
 						<artifactId>maven-surefire-plugin</artifactId>
 						<configuration>
 							<suiteXmlFiles>
-								<suiteXmlFile>testng-Parallel-Execution.xml</suiteXmlFile>
+								<suiteXmlFile>testng-parallel_execution.xml</suiteXmlFile>
 							</suiteXmlFiles>
 						</configuration>
 					</plugin>
@@ -203,7 +203,7 @@
 						<artifactId>maven-surefire-plugin</artifactId>
 						<configuration>
 							<suiteXmlFiles>
-								<suiteXmlFile>testng-Smoke.xml</suiteXmlFile>
+								<suiteXmlFile>testng-smoke.xml</suiteXmlFile>
 							</suiteXmlFiles>
 						</configuration>
 					</plugin>
@@ -220,14 +220,14 @@
 						<artifactId>maven-surefire-plugin</artifactId>
 						<configuration>
 							<suiteXmlFiles>
-								<suiteXmlFile>testng-System.xml</suiteXmlFile>
+								<suiteXmlFile>testng-system.xml</suiteXmlFile>
 							</suiteXmlFiles>
 						</configuration>
 					</plugin>
 				</plugins>
 			</build>
 		</profile>
-	</profiles> -->
+	</profiles>
 
 
   <build>
