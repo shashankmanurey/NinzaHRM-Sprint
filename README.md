@@ -380,7 +380,7 @@ Review these repository-specific details before running against another machine 
 
 ## Project Status
 
-This project is a complete Selenium automation training and implementation exercise focused on validating the Sauce Demo application across multiple business flows and test categories.
+This project is a complete Selenium automation training and implementation exercise focused on validating the Ninza HRM application across multiple business flows and test categories.
 
 ## Recommended Improvements
 
