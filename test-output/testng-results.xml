@@ -1,134 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="17" passed="17" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
     <line>
       <![CDATA[Logged in successfully and navigated to next Page]]>
     </line>
     <line>
-      <![CDATA[Logged in successfully and navigated to next Page]]>
-    </line>
-    <line>
-      <![CDATA[Logged in successfully and navigated to next Page]]>
-    </line>
-    <line>
       <![CDATA[Resources page was successfully displayed after login]]>
-    </line>
-    <line>
-      <![CDATA[Upload submitted for file]]>
-    </line>
-    <line>
-      <![CDATA[Logged in successfully and navigated to next Page]]>
-    </line>
-    <line>
-      <![CDATA[Employees chart is successfully displayed]]>
-    </line>
-    <line>
-      <![CDATA[Projects chart is successfully displayed]]>
-    </line>
-    <line>
-      <![CDATA[Logout successfully occured from dashboard page]]>
-    </line>
-    <line>
-      <![CDATA[File uploaded and verified successfully: BatchExecution_TestNG_Report.html]]>
-    </line>
-    <line>
-      <![CDATA[Valid Login Successful]]>
-    </line>
-    <line>
-      <![CDATA[Username = rmgyantra]]>
-    </line>
-    <line>
-      <![CDATA[Application rejected duplicate employee details.]]>
-    </line>
-    <line>
-      <![CDATA[User successfully loged out of the session after clicking logout button]]>
-    </line>
-    <line>
-      <![CDATA[Added new valid employee with all details of employee:shank]]>
-    </line>
-    <line>
-      <![CDATA[Logged in successfully and navigated to next Page]]>
-    </line>
-    <line>
-      <![CDATA[Logged in successfully and navigated to next Page]]>
-    </line>
-    <line>
-      <![CDATA[Valid Login Successful]]>
-    </line>
-    <line>
-      <![CDATA[Username = rmgyantra]]>
-    </line>
-    <line>
-      <![CDATA[Employees chart is successfully displayed]]>
-    </line>
-    <line>
-      <![CDATA[Projects chart is successfully displayed]]>
-    </line>
-    <line>
-      <![CDATA[Resources page was successfully opened after login]]>
-    </line>
-    <line>
-      <![CDATA[Invalid credentials]]>
-    </line>
-    <line>
-      <![CDATA[Username = rmgyantra Password = ]]>
-    </line>
-    <line>
-      <![CDATA[Invalid credential]]>
-    </line>
-    <line>
-      <![CDATA[Login did not occur due to blank]]>
-    </line>
-    <line>
-      <![CDATA[Username field is displayed]]>
-    </line>
-    <line>
-      <![CDATA[Password field is displayed]]>
-    </line>
-    <line>
-      <![CDATA[Signin button is displayed]]>
-    </line>
-    <line>
-      <![CDATA[Get Demo is displayed]]>
-    </line>
-    <line>
-      <![CDATA[All the fields i.e Username, Password, Signin Button, Get Demo in login page is successfully displayed]]>
-    </line>
-    <line>
-      <![CDATA[Logged in successfully and navigated to next Page]]>
-    </line>
-    <line>
-      <![CDATA[Add New Employee form opens after clicking Add New Employee]]>
-    </line>
-    <line>
-      <![CDATA[Logged in successfully and navigated to next Page]]>
-    </line>
-    <line>
-      <![CDATA[Employees chart is successfully displayed]]>
-    </line>
-    <line>
-      <![CDATA[Projects chart is successfully displayed]]>
-    </line>
-    <line>
-      <![CDATA[Logged in successfully and navigated to next Page]]>
-    </line>
-    <line>
-      <![CDATA[Invalid credentials]]>
-    </line>
-    <line>
-      <![CDATA[Username =  Password = ]]>
-    </line>
-    <line>
-      <![CDATA[Invalid credentials]]>
-    </line>
-    <line>
-      <![CDATA[Login did not occur due to blank credentials]]>
-    </line>
-    <line>
-      <![CDATA[Resources page was successfully displayed after login]]>
-    </line>
-    <line>
-      <![CDATA[Logout successfully occured from dashboard page]]>
     </line>
     <line>
       <![CDATA[Already existing file cannot be uploaded]]>
@@ -136,30 +13,6 @@
     <line>
       <![CDATA[Error message displayed: File Name Already Exist
 ✖︎]]>
-    </line>
-    <line>
-      <![CDATA[User cannot access Dashboard page after logout successfully occured from dashboard page, Dashboard access denied after logout]]>
-    </line>
-    <line>
-      <![CDATA[Logged in successfully and navigated to next Page]]>
-    </line>
-    <line>
-      <![CDATA[Manage Employees is displayed after clicking on Employees]]>
-    </line>
-    <line>
-      <![CDATA[Employees table is displayed after clicking on Employees]]>
-    </line>
-    <line>
-      <![CDATA[Invalid credentials]]>
-    </line>
-    <line>
-      <![CDATA[Username = sha  Password = rmgy@9999]]>
-    </line>
-    <line>
-      <![CDATA[Invalid credential]]>
-    </line>
-    <line>
-      <![CDATA[Login did not occur due to invalid username]]>
     </line>
     <line>
       <![CDATA[Logged in successfully and navigated to next Page]]>
@@ -171,271 +24,24 @@
       <![CDATA[Non existent file name is not displayed]]>
     </line>
   </reporter-output>
-  <suite started-at="2026-10-19T15:51:50 IST" name="Parallel-Execution" finished-at="2026-10-19T15:53:29 IST" duration-ms="98867">
+  <suite started-at="2026-10-24T10:16:56 IST" name="Default suite" finished-at="2026-10-24T10:17:26 IST" duration-ms="30277">
     <groups>
       <group name="negative">
-        <method signature="DashboardNegative.verifyReopenDash()[pri:0, instance:DashboardScript.DashboardNegative@16d04d3d]" name="verifyReopenDash" class="DashboardScript.DashboardNegative"/>
-        <method signature="EmployeeNegative.verifyEmpAlreadyExist()[pri:0, instance:EmployeeScript.EmployeeNegative@36bc55de]" name="verifyEmpAlreadyExist" class="EmployeeScript.EmployeeNegative"/>
-        <method signature="LoginNegative.blankPassword()[pri:0, instance:LoginScript.LoginNegative@564fabc8]" name="blankPassword" class="LoginScript.LoginNegative"/>
-        <method signature="LoginNegative.emptyFields()[pri:0, instance:LoginScript.LoginNegative@564fabc8]" name="emptyFields" class="LoginScript.LoginNegative"/>
-        <method signature="LoginNegative.invalidUsername()[pri:0, instance:LoginScript.LoginNegative@564fabc8]" name="invalidUsername" class="LoginScript.LoginNegative"/>
-        <method signature="ResourcesNegative.fileExist()[pri:0, instance:ResourcesScript.ResourcesNegative@49ec71f8]" name="fileExist" class="ResourcesScript.ResourcesNegative"/>
-        <method signature="ResourcesNegative.nonExistFile()[pri:0, instance:ResourcesScript.ResourcesNegative@49ec71f8]" name="nonExistFile" class="ResourcesScript.ResourcesNegative"/>
+        <method signature="ResourcesNegative.fileExist()[pri:0, instance:ResourcesScript.ResourcesNegative@5e0826e7]" name="fileExist" class="ResourcesScript.ResourcesNegative"/>
+        <method signature="ResourcesNegative.nonExistFile()[pri:0, instance:ResourcesScript.ResourcesNegative@5e0826e7]" name="nonExistFile" class="ResourcesScript.ResourcesNegative"/>
       </group> <!-- negative -->
-      <group name="system">
-        <method signature="DashboardPositive.verifyDashLogout()[pri:0, instance:DashboardScript.DashboardPositive@6b927fb]" name="verifyDashLogout" class="DashboardScript.DashboardPositive"/>
-        <method signature="LoginPositive.logoutEndsSession()[pri:0, instance:LoginScript.LoginPositive@359f7cdf]" name="logoutEndsSession" class="LoginScript.LoginPositive"/>
-      </group> <!-- system -->
-      <group name="integration">
-        <method signature="LoginPositive.validLoginTest()[pri:0, instance:LoginScript.LoginPositive@359f7cdf]" name="validLoginTest" class="LoginScript.LoginPositive"/>
-      </group> <!-- integration -->
-      <group name="smoke">
-        <method signature="EmployeePositive.verifyEmpPage()[pri:0, instance:EmployeeScript.EmployeePositive@1189dd52]" name="verifyEmpPage" class="EmployeeScript.EmployeePositive"/>
-        <method signature="LoginPositive.verifyIsDisplayed()[pri:0, instance:LoginScript.LoginPositive@359f7cdf]" name="verifyIsDisplayed" class="LoginScript.LoginPositive"/>
-        <method signature="ResourcesPositive.verifyResPage()[pri:0, instance:ResourcesScript.ResourcesPositive@7e07db1f]" name="verifyResPage" class="ResourcesScript.ResourcesPositive"/>
-      </group> <!-- smoke -->
-      <group name="functionality">
-        <method signature="DashboardPositive.verifyDashboard()[pri:0, instance:DashboardScript.DashboardPositive@6b927fb]" name="verifyDashboard" class="DashboardScript.DashboardPositive"/>
-        <method signature="EmployeePositive.addNewEmp()[pri:0, instance:EmployeeScript.EmployeePositive@1189dd52]" name="addNewEmp" class="EmployeeScript.EmployeePositive"/>
-        <method signature="EmployeePositive.verifyAddEmpPage()[pri:0, instance:EmployeeScript.EmployeePositive@1189dd52]" name="verifyAddEmpPage" class="EmployeeScript.EmployeePositive"/>
-        <method signature="ResourcesPositive.uploadFile()[pri:0, instance:ResourcesScript.ResourcesPositive@7e07db1f]" name="uploadFile" class="ResourcesScript.ResourcesPositive"/>
-      </group> <!-- functionality -->
     </groups>
-    <test started-at="2026-10-19T15:51:50 IST" name="Test" finished-at="2026-10-19T15:53:29 IST" duration-ms="98867">
-      <class name="DashboardScript.DashboardNegative">
-        <test-method is-config="true" signature="openApplication(java.lang.String)[pri:0, instance:DashboardScript.DashboardNegative@16d04d3d]" started-at="2026-10-19T15:52:48 IST" name="openApplication" finished-at="2026-10-19T15:52:55 IST" duration-ms="6773" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openApplication -->
-        <test-method is-config="true" signature="loginBeforeTest()[pri:0, instance:DashboardScript.DashboardNegative@16d04d3d]" started-at="2026-10-19T15:52:55 IST" name="loginBeforeTest" finished-at="2026-10-19T15:52:56 IST" duration-ms="1615" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[Logged in successfully and navigated to next Page]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- loginBeforeTest -->
-        <test-method signature="verifyReopenDash()[pri:0, instance:DashboardScript.DashboardNegative@16d04d3d]" started-at="2026-10-19T15:52:56 IST" name="verifyReopenDash" finished-at="2026-10-19T15:53:00 IST" duration-ms="3657" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[Employees chart is successfully displayed]]>
-            </line>
-            <line>
-              <![CDATA[Projects chart is successfully displayed]]>
-            </line>
-            <line>
-              <![CDATA[Logout successfully occured from dashboard page]]>
-            </line>
-            <line>
-              <![CDATA[User cannot access Dashboard page after logout successfully occured from dashboard page, Dashboard access denied after logout]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- verifyReopenDash -->
-        <test-method is-config="true" signature="closeApplication()[pri:0, instance:DashboardScript.DashboardNegative@16d04d3d]" started-at="2026-10-19T15:53:00 IST" name="closeApplication" finished-at="2026-10-19T15:53:02 IST" duration-ms="1591" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeApplication -->
-      </class> <!-- DashboardScript.DashboardNegative -->
-      <class name="EmployeeScript.EmployeeNegative">
-        <test-method is-config="true" signature="openApplication(java.lang.String)[pri:0, instance:EmployeeScript.EmployeeNegative@36bc55de]" started-at="2026-10-19T15:51:50 IST" name="openApplication" finished-at="2026-10-19T15:52:17 IST" duration-ms="27173" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openApplication -->
-        <test-method is-config="true" signature="loginBeforeTest()[pri:0, instance:EmployeeScript.EmployeeNegative@36bc55de]" started-at="2026-10-19T15:52:17 IST" name="loginBeforeTest" finished-at="2026-10-19T15:52:22 IST" duration-ms="4248" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[Logged in successfully and navigated to next Page]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- loginBeforeTest -->
-        <test-method signature="verifyEmpAlreadyExist()[pri:0, instance:EmployeeScript.EmployeeNegative@36bc55de]" started-at="2026-10-19T15:52:22 IST" name="verifyEmpAlreadyExist" finished-at="2026-10-19T15:52:31 IST" duration-ms="9156" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[Application rejected duplicate employee details.]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- verifyEmpAlreadyExist -->
-        <test-method is-config="true" signature="closeApplication()[pri:0, instance:EmployeeScript.EmployeeNegative@36bc55de]" started-at="2026-10-19T15:52:31 IST" name="closeApplication" finished-at="2026-10-19T15:52:36 IST" duration-ms="4618" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeApplication -->
-      </class> <!-- EmployeeScript.EmployeeNegative -->
-      <class name="DashboardScript.DashboardPositive">
-        <test-method is-config="true" signature="openApplication(java.lang.String)[pri:0, instance:DashboardScript.DashboardPositive@6b927fb]" started-at="2026-10-19T15:51:50 IST" name="openApplication" finished-at="2026-10-19T15:52:22 IST" duration-ms="31634" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openApplication -->
-        <test-method is-config="true" signature="loginBeforeTest()[pri:0, instance:DashboardScript.DashboardPositive@6b927fb]" started-at="2026-10-19T15:52:22 IST" name="loginBeforeTest" finished-at="2026-10-19T15:52:25 IST" duration-ms="2701" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[Logged in successfully and navigated to next Page]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- loginBeforeTest -->
-        <test-method signature="verifyDashLogout()[pri:0, instance:DashboardScript.DashboardPositive@6b927fb]" started-at="2026-10-19T15:52:25 IST" name="verifyDashLogout" finished-at="2026-10-19T15:52:26 IST" duration-ms="1740" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[Employees chart is successfully displayed]]>
-            </line>
-            <line>
-              <![CDATA[Projects chart is successfully displayed]]>
-            </line>
-            <line>
-              <![CDATA[Logout successfully occured from dashboard page]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- verifyDashLogout -->
-        <test-method is-config="true" signature="closeApplication()[pri:0, instance:DashboardScript.DashboardPositive@6b927fb]" started-at="2026-10-19T15:52:26 IST" name="closeApplication" finished-at="2026-10-19T15:52:33 IST" duration-ms="6496" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeApplication -->
-        <test-method is-config="true" signature="openApplication(java.lang.String)[pri:0, instance:DashboardScript.DashboardPositive@6b927fb]" started-at="2026-10-19T15:52:33 IST" name="openApplication" finished-at="2026-10-19T15:52:41 IST" duration-ms="7833" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openApplication -->
-        <test-method is-config="true" signature="loginBeforeTest()[pri:0, instance:DashboardScript.DashboardPositive@6b927fb]" started-at="2026-10-19T15:52:41 IST" name="loginBeforeTest" finished-at="2026-10-19T15:52:43 IST" duration-ms="2194" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[Logged in successfully and navigated to next Page]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- loginBeforeTest -->
-        <test-method signature="verifyDashboard()[pri:0, instance:DashboardScript.DashboardPositive@6b927fb]" started-at="2026-10-19T15:52:43 IST" name="verifyDashboard" finished-at="2026-10-19T15:52:44 IST" duration-ms="1585" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[Employees chart is successfully displayed]]>
-            </line>
-            <line>
-              <![CDATA[Projects chart is successfully displayed]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- verifyDashboard -->
-        <test-method is-config="true" signature="closeApplication()[pri:0, instance:DashboardScript.DashboardPositive@6b927fb]" started-at="2026-10-19T15:52:44 IST" name="closeApplication" finished-at="2026-10-19T15:52:48 IST" duration-ms="3484" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeApplication -->
-      </class> <!-- DashboardScript.DashboardPositive -->
-      <class name="EmployeeScript.EmployeePositive">
-        <test-method is-config="true" signature="openApplication(java.lang.String)[pri:0, instance:EmployeeScript.EmployeePositive@1189dd52]" started-at="2026-10-19T15:51:50 IST" name="openApplication" finished-at="2026-10-19T15:52:17 IST" duration-ms="27169" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openApplication -->
-        <test-method is-config="true" signature="loginBeforeTest()[pri:0, instance:EmployeeScript.EmployeePositive@1189dd52]" started-at="2026-10-19T15:52:17 IST" name="loginBeforeTest" finished-at="2026-10-19T15:52:22 IST" duration-ms="4265" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[Logged in successfully and navigated to next Page]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- loginBeforeTest -->
-        <test-method signature="addNewEmp()[pri:0, instance:EmployeeScript.EmployeePositive@1189dd52]" started-at="2026-10-19T15:52:22 IST" name="addNewEmp" finished-at="2026-10-19T15:52:39 IST" duration-ms="17554" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[Added new valid employee with all details of employee:shank]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- addNewEmp -->
-        <test-method is-config="true" signature="closeApplication()[pri:0, instance:EmployeeScript.EmployeePositive@1189dd52]" started-at="2026-10-19T15:52:39 IST" name="closeApplication" finished-at="2026-10-19T15:52:42 IST" duration-ms="2849" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeApplication -->
-        <test-method is-config="true" signature="openApplication(java.lang.String)[pri:0, instance:EmployeeScript.EmployeePositive@1189dd52]" started-at="2026-10-19T15:52:42 IST" name="openApplication" finished-at="2026-10-19T15:52:48 IST" duration-ms="6291" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openApplication -->
-        <test-method is-config="true" signature="loginBeforeTest()[pri:0, instance:EmployeeScript.EmployeePositive@1189dd52]" started-at="2026-10-19T15:52:48 IST" name="loginBeforeTest" finished-at="2026-10-19T15:52:53 IST" duration-ms="4504" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[Logged in successfully and navigated to next Page]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- loginBeforeTest -->
-        <test-method signature="verifyAddEmpPage()[pri:0, instance:EmployeeScript.EmployeePositive@1189dd52]" started-at="2026-10-19T15:52:53 IST" name="verifyAddEmpPage" finished-at="2026-10-19T15:52:54 IST" duration-ms="1017" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[Add New Employee form opens after clicking Add New Employee]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- verifyAddEmpPage -->
-        <test-method is-config="true" signature="closeApplication()[pri:0, instance:EmployeeScript.EmployeePositive@1189dd52]" started-at="2026-10-19T15:52:54 IST" name="closeApplication" finished-at="2026-10-19T15:52:57 IST" duration-ms="3180" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeApplication -->
-        <test-method is-config="true" signature="openApplication(java.lang.String)[pri:0, instance:EmployeeScript.EmployeePositive@1189dd52]" started-at="2026-10-19T15:52:57 IST" name="openApplication" finished-at="2026-10-19T15:53:04 IST" duration-ms="6878" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openApplication -->
-        <test-method is-config="true" signature="loginBeforeTest()[pri:0, instance:EmployeeScript.EmployeePositive@1189dd52]" started-at="2026-10-19T15:53:04 IST" name="loginBeforeTest" finished-at="2026-10-19T15:53:05 IST" duration-ms="868" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[Logged in successfully and navigated to next Page]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- loginBeforeTest -->
-        <test-method signature="verifyEmpPage()[pri:0, instance:EmployeeScript.EmployeePositive@1189dd52]" started-at="2026-10-19T15:53:05 IST" name="verifyEmpPage" finished-at="2026-10-19T15:53:05 IST" duration-ms="461" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[Manage Employees is displayed after clicking on Employees]]>
-            </line>
-            <line>
-              <![CDATA[Employees table is displayed after clicking on Employees]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- verifyEmpPage -->
-        <test-method is-config="true" signature="closeApplication()[pri:0, instance:EmployeeScript.EmployeePositive@1189dd52]" started-at="2026-10-19T15:53:05 IST" name="closeApplication" finished-at="2026-10-19T15:53:06 IST" duration-ms="374" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeApplication -->
-      </class> <!-- EmployeeScript.EmployeePositive -->
+    <test started-at="2026-10-24T10:16:56 IST" name="Default test" finished-at="2026-10-24T10:17:26 IST" duration-ms="30277">
       <class name="ResourcesScript.ResourcesNegative">
-        <test-method is-config="true" signature="openApplication(java.lang.String)[pri:0, instance:ResourcesScript.ResourcesNegative@49ec71f8]" started-at="2026-10-19T15:52:48 IST" name="openApplication" finished-at="2026-10-19T15:52:55 IST" duration-ms="7000" status="PASS">
+        <test-method is-config="true" signature="Bs()[pri:0, instance:ResourcesScript.ResourcesNegative@5e0826e7]" started-at="2026-10-24T10:16:56 IST" name="Bs" finished-at="2026-10-24T10:16:56 IST" duration-ms="9" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Bs -->
+        <test-method is-config="true" signature="Bt()[pri:0, instance:ResourcesScript.ResourcesNegative@5e0826e7]" started-at="2026-10-24T10:16:56 IST" name="Bt" finished-at="2026-10-24T10:16:56 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Bt -->
+        <test-method is-config="true" signature="openApplication(java.lang.String)[pri:0, instance:ResourcesScript.ResourcesNegative@5e0826e7]" started-at="2026-10-24T10:16:56 IST" name="openApplication" finished-at="2026-10-24T10:17:00 IST" duration-ms="3485" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -446,14 +52,14 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openApplication -->
-        <test-method is-config="true" signature="loginBeforeTest()[pri:0, instance:ResourcesScript.ResourcesNegative@49ec71f8]" started-at="2026-10-19T15:52:55 IST" name="loginBeforeTest" finished-at="2026-10-19T15:52:57 IST" duration-ms="1669" status="PASS">
+        <test-method is-config="true" signature="loginBeforeTest()[pri:0, instance:ResourcesScript.ResourcesNegative@5e0826e7]" started-at="2026-10-24T10:17:00 IST" name="loginBeforeTest" finished-at="2026-10-24T10:17:00 IST" duration-ms="571" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Logged in successfully and navigated to next Page]]>
             </line>
           </reporter-output>
         </test-method> <!-- loginBeforeTest -->
-        <test-method signature="fileExist()[pri:0, instance:ResourcesScript.ResourcesNegative@49ec71f8]" started-at="2026-10-19T15:52:57 IST" name="fileExist" finished-at="2026-10-19T15:53:00 IST" duration-ms="3576" status="PASS">
+        <test-method signature="fileExist()[pri:0, instance:ResourcesScript.ResourcesNegative@5e0826e7]" started-at="2026-10-24T10:17:00 IST" name="fileExist" finished-at="2026-10-24T10:17:02 IST" duration-ms="1511" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Resources page was successfully displayed after login]]>
@@ -467,11 +73,11 @@
             </line>
           </reporter-output>
         </test-method> <!-- fileExist -->
-        <test-method is-config="true" signature="closeApplication()[pri:0, instance:ResourcesScript.ResourcesNegative@49ec71f8]" started-at="2026-10-19T15:53:00 IST" name="closeApplication" finished-at="2026-10-19T15:53:01 IST" duration-ms="1023" status="PASS">
+        <test-method is-config="true" signature="closeApplication()[pri:0, instance:ResourcesScript.ResourcesNegative@5e0826e7]" started-at="2026-10-24T10:17:02 IST" name="closeApplication" finished-at="2026-10-24T10:17:02 IST" duration-ms="210" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApplication -->
-        <test-method is-config="true" signature="openApplication(java.lang.String)[pri:0, instance:ResourcesScript.ResourcesNegative@49ec71f8]" started-at="2026-10-19T15:53:01 IST" name="openApplication" finished-at="2026-10-19T15:53:07 IST" duration-ms="5213" status="PASS">
+        <test-method is-config="true" signature="openApplication(java.lang.String)[pri:0, instance:ResourcesScript.ResourcesNegative@5e0826e7]" started-at="2026-10-24T10:17:02 IST" name="openApplication" finished-at="2026-10-24T10:17:05 IST" duration-ms="3155" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -482,14 +88,14 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openApplication -->
-        <test-method is-config="true" signature="loginBeforeTest()[pri:0, instance:ResourcesScript.ResourcesNegative@49ec71f8]" started-at="2026-10-19T15:53:07 IST" name="loginBeforeTest" finished-at="2026-10-19T15:53:08 IST" duration-ms="927" status="PASS">
+        <test-method is-config="true" signature="loginBeforeTest()[pri:0, instance:ResourcesScript.ResourcesNegative@5e0826e7]" started-at="2026-10-24T10:17:05 IST" name="loginBeforeTest" finished-at="2026-10-24T10:17:05 IST" duration-ms="516" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Logged in successfully and navigated to next Page]]>
             </line>
           </reporter-output>
         </test-method> <!-- loginBeforeTest -->
-        <test-method signature="nonExistFile()[pri:0, instance:ResourcesScript.ResourcesNegative@49ec71f8]" started-at="2026-10-19T15:53:08 IST" name="nonExistFile" finished-at="2026-10-19T15:53:29 IST" duration-ms="21153" status="PASS">
+        <test-method signature="nonExistFile()[pri:0, instance:ResourcesScript.ResourcesNegative@5e0826e7]" started-at="2026-10-24T10:17:05 IST" name="nonExistFile" finished-at="2026-10-24T10:17:26 IST" duration-ms="20554" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Resources page was successfully displayed after login]]>
@@ -499,277 +105,19 @@
             </line>
           </reporter-output>
         </test-method> <!-- nonExistFile -->
-        <test-method is-config="true" signature="closeApplication()[pri:0, instance:ResourcesScript.ResourcesNegative@49ec71f8]" started-at="2026-10-19T15:53:29 IST" name="closeApplication" finished-at="2026-10-19T15:53:29 IST" duration-ms="295" status="PASS">
+        <test-method is-config="true" signature="closeApplication()[pri:0, instance:ResourcesScript.ResourcesNegative@5e0826e7]" started-at="2026-10-24T10:17:26 IST" name="closeApplication" finished-at="2026-10-24T10:17:26 IST" duration-ms="234" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApplication -->
-      </class> <!-- ResourcesScript.ResourcesNegative -->
-      <class name="ResourcesScript.ResourcesPositive">
-        <test-method is-config="true" signature="openApplication(java.lang.String)[pri:0, instance:ResourcesScript.ResourcesPositive@7e07db1f]" started-at="2026-10-19T15:51:50 IST" name="openApplication" finished-at="2026-10-19T15:52:19 IST" duration-ms="28442" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openApplication -->
-        <test-method is-config="true" signature="loginBeforeTest()[pri:0, instance:ResourcesScript.ResourcesPositive@7e07db1f]" started-at="2026-10-19T15:52:19 IST" name="loginBeforeTest" finished-at="2026-10-19T15:52:22 IST" duration-ms="3581" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[Logged in successfully and navigated to next Page]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- loginBeforeTest -->
-        <test-method signature="uploadFile()[pri:0, instance:ResourcesScript.ResourcesPositive@7e07db1f]" started-at="2026-10-19T15:52:22 IST" name="uploadFile" finished-at="2026-10-19T15:52:26 IST" duration-ms="4282" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[Resources page was successfully displayed after login]]>
-            </line>
-            <line>
-              <![CDATA[Upload submitted for file]]>
-            </line>
-            <line>
-              <![CDATA[File uploaded and verified successfully: BatchExecution_TestNG_Report.html]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- uploadFile -->
-        <test-method is-config="true" signature="closeApplication()[pri:0, instance:ResourcesScript.ResourcesPositive@7e07db1f]" started-at="2026-10-19T15:52:26 IST" name="closeApplication" finished-at="2026-10-19T15:52:33 IST" duration-ms="6308" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeApplication -->
-        <test-method is-config="true" signature="openApplication(java.lang.String)[pri:0, instance:ResourcesScript.ResourcesPositive@7e07db1f]" started-at="2026-10-19T15:52:33 IST" name="openApplication" finished-at="2026-10-19T15:52:41 IST" duration-ms="7959" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openApplication -->
-        <test-method is-config="true" signature="loginBeforeTest()[pri:0, instance:ResourcesScript.ResourcesPositive@7e07db1f]" started-at="2026-10-19T15:52:41 IST" name="loginBeforeTest" finished-at="2026-10-19T15:52:43 IST" duration-ms="2165" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[Logged in successfully and navigated to next Page]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- loginBeforeTest -->
-        <test-method signature="verifyResPage()[pri:0, instance:ResourcesScript.ResourcesPositive@7e07db1f]" started-at="2026-10-19T15:52:43 IST" name="verifyResPage" finished-at="2026-10-19T15:52:45 IST" duration-ms="2146" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[Resources page was successfully opened after login]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- verifyResPage -->
-        <test-method is-config="true" signature="closeApplication()[pri:0, instance:ResourcesScript.ResourcesPositive@7e07db1f]" started-at="2026-10-19T15:52:45 IST" name="closeApplication" finished-at="2026-10-19T15:52:48 IST" duration-ms="3045" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeApplication -->
-      </class> <!-- ResourcesScript.ResourcesPositive -->
-      <class name="LoginScript.LoginPositive">
-        <test-method is-config="true" signature="Bs()[pri:0, instance:LoginScript.LoginPositive@359f7cdf]" started-at="2026-10-19T15:51:50 IST" name="Bs" finished-at="2026-10-19T15:51:50 IST" duration-ms="15" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Bs -->
-        <test-method is-config="true" signature="Bt()[pri:0, instance:LoginScript.LoginPositive@359f7cdf]" started-at="2026-10-19T15:51:50 IST" name="Bt" finished-at="2026-10-19T15:51:50 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Bt -->
-        <test-method is-config="true" signature="openApplication(java.lang.String)[pri:0, instance:LoginScript.LoginPositive@359f7cdf]" started-at="2026-10-19T15:51:50 IST" name="openApplication" finished-at="2026-10-19T15:52:19 IST" duration-ms="28404" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openApplication -->
-        <test-method signature="logoutEndsSession()[pri:0, instance:LoginScript.LoginPositive@359f7cdf]" started-at="2026-10-19T15:52:19 IST" name="logoutEndsSession" finished-at="2026-10-19T15:52:30 IST" duration-ms="11815" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[Valid Login Successful]]>
-            </line>
-            <line>
-              <![CDATA[Username = rmgyantra]]>
-            </line>
-            <line>
-              <![CDATA[User successfully loged out of the session after clicking logout button]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- logoutEndsSession -->
-        <test-method is-config="true" signature="closeApplication()[pri:0, instance:LoginScript.LoginPositive@359f7cdf]" started-at="2026-10-19T15:52:30 IST" name="closeApplication" finished-at="2026-10-19T15:52:33 IST" duration-ms="2475" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeApplication -->
-        <test-method is-config="true" signature="openApplication(java.lang.String)[pri:0, instance:LoginScript.LoginPositive@359f7cdf]" started-at="2026-10-19T15:52:33 IST" name="openApplication" finished-at="2026-10-19T15:52:41 IST" duration-ms="7983" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openApplication -->
-        <test-method signature="validLoginTest()[pri:0, instance:LoginScript.LoginPositive@359f7cdf]" started-at="2026-10-19T15:52:41 IST" name="validLoginTest" finished-at="2026-10-19T15:52:43 IST" duration-ms="2093" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[Valid Login Successful]]>
-            </line>
-            <line>
-              <![CDATA[Username = rmgyantra]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- validLoginTest -->
-        <test-method is-config="true" signature="closeApplication()[pri:0, instance:LoginScript.LoginPositive@359f7cdf]" started-at="2026-10-19T15:52:43 IST" name="closeApplication" finished-at="2026-10-19T15:52:45 IST" duration-ms="2408" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeApplication -->
-        <test-method is-config="true" signature="openApplication(java.lang.String)[pri:0, instance:LoginScript.LoginPositive@359f7cdf]" started-at="2026-10-19T15:52:45 IST" name="openApplication" finished-at="2026-10-19T15:52:49 IST" duration-ms="4041" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openApplication -->
-        <test-method signature="verifyIsDisplayed()[pri:0, instance:LoginScript.LoginPositive@359f7cdf]" started-at="2026-10-19T15:52:49 IST" name="verifyIsDisplayed" finished-at="2026-10-19T15:52:51 IST" duration-ms="1544" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[Username field is displayed]]>
-            </line>
-            <line>
-              <![CDATA[Password field is displayed]]>
-            </line>
-            <line>
-              <![CDATA[Signin button is displayed]]>
-            </line>
-            <line>
-              <![CDATA[Get Demo is displayed]]>
-            </line>
-            <line>
-              <![CDATA[All the fields i.e Username, Password, Signin Button, Get Demo in login page is successfully displayed]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- verifyIsDisplayed -->
-        <test-method is-config="true" signature="closeApplication()[pri:0, instance:LoginScript.LoginPositive@359f7cdf]" started-at="2026-10-19T15:52:51 IST" name="closeApplication" finished-at="2026-10-19T15:52:57 IST" duration-ms="5590" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeApplication -->
-        <test-method is-config="true" signature="At()[pri:0, instance:LoginScript.LoginPositive@359f7cdf]" started-at="2026-10-19T15:53:29 IST" name="At" finished-at="2026-10-19T15:53:29 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="At()[pri:0, instance:ResourcesScript.ResourcesNegative@5e0826e7]" started-at="2026-10-24T10:17:26 IST" name="At" finished-at="2026-10-24T10:17:26 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- At -->
-        <test-method is-config="true" signature="As()[pri:0, instance:LoginScript.LoginPositive@359f7cdf]" started-at="2026-10-19T15:53:29 IST" name="As" finished-at="2026-10-19T15:53:29 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="As()[pri:0, instance:ResourcesScript.ResourcesNegative@5e0826e7]" started-at="2026-10-24T10:17:26 IST" name="As" finished-at="2026-10-24T10:17:26 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- As -->
-      </class> <!-- LoginScript.LoginPositive -->
-      <class name="LoginScript.LoginNegative">
-        <test-method is-config="true" signature="openApplication(java.lang.String)[pri:0, instance:LoginScript.LoginNegative@564fabc8]" started-at="2026-10-19T15:52:36 IST" name="openApplication" finished-at="2026-10-19T15:52:43 IST" duration-ms="7448" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openApplication -->
-        <test-method signature="blankPassword()[pri:0, instance:LoginScript.LoginNegative@564fabc8]" started-at="2026-10-19T15:52:43 IST" name="blankPassword" finished-at="2026-10-19T15:52:47 IST" duration-ms="4063" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[Invalid credentials]]>
-            </line>
-            <line>
-              <![CDATA[Username = rmgyantra Password = ]]>
-            </line>
-            <line>
-              <![CDATA[Invalid credential]]>
-            </line>
-            <line>
-              <![CDATA[Login did not occur due to blank]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- blankPassword -->
-        <test-method is-config="true" signature="closeApplication()[pri:0, instance:LoginScript.LoginNegative@564fabc8]" started-at="2026-10-19T15:52:47 IST" name="closeApplication" finished-at="2026-10-19T15:52:50 IST" duration-ms="3129" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeApplication -->
-        <test-method is-config="true" signature="openApplication(java.lang.String)[pri:0, instance:LoginScript.LoginNegative@564fabc8]" started-at="2026-10-19T15:52:50 IST" name="openApplication" finished-at="2026-10-19T15:52:55 IST" duration-ms="5130" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openApplication -->
-        <test-method signature="emptyFields()[pri:0, instance:LoginScript.LoginNegative@564fabc8]" started-at="2026-10-19T15:52:55 IST" name="emptyFields" finished-at="2026-10-19T15:52:57 IST" duration-ms="1657" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[Invalid credentials]]>
-            </line>
-            <line>
-              <![CDATA[Username =  Password = ]]>
-            </line>
-            <line>
-              <![CDATA[Invalid credentials]]>
-            </line>
-            <line>
-              <![CDATA[Login did not occur due to blank credentials]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- emptyFields -->
-        <test-method is-config="true" signature="closeApplication()[pri:0, instance:LoginScript.LoginNegative@564fabc8]" started-at="2026-10-19T15:52:57 IST" name="closeApplication" finished-at="2026-10-19T15:52:58 IST" duration-ms="774" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeApplication -->
-        <test-method is-config="true" signature="openApplication(java.lang.String)[pri:0, instance:LoginScript.LoginNegative@564fabc8]" started-at="2026-10-19T15:52:58 IST" name="openApplication" finished-at="2026-10-19T15:53:04 IST" duration-ms="6496" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openApplication -->
-        <test-method signature="invalidUsername()[pri:0, instance:LoginScript.LoginNegative@564fabc8]" started-at="2026-10-19T15:53:04 IST" name="invalidUsername" finished-at="2026-10-19T15:53:06 IST" duration-ms="1757" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[Invalid credentials]]>
-            </line>
-            <line>
-              <![CDATA[Username = sha  Password = rmgy@9999]]>
-            </line>
-            <line>
-              <![CDATA[Invalid credential]]>
-            </line>
-            <line>
-              <![CDATA[Login did not occur due to invalid username]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- invalidUsername -->
-        <test-method is-config="true" signature="closeApplication()[pri:0, instance:LoginScript.LoginNegative@564fabc8]" started-at="2026-10-19T15:53:06 IST" name="closeApplication" finished-at="2026-10-19T15:53:06 IST" duration-ms="358" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeApplication -->
-      </class> <!-- LoginScript.LoginNegative -->
-    </test> <!-- Test -->
-  </suite> <!-- Parallel-Execution -->
+      </class> <!-- ResourcesScript.ResourcesNegative -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

@@ -232,8 +232,40 @@ public class EmployeePom
         searchField.clear();
         searchField.sendKeys(name);
     }
+    public void searchEmployeeEmail(String email) {wait.until(ExpectedConditions.visibilityOf(search));
+
+        new Select(search).selectByVisibleText("Search by Email");
+        WebElement searchField =wait.until(ExpectedConditions.visibilityOf(typeEmail));
+
+        searchField.clear();
+        searchField.sendKeys(email);
+    }
+    public void searchEmployeePhone(String phone) {wait.until(ExpectedConditions.visibilityOf(search));
+
+        new Select(search).selectByVisibleText("Search by Phone");
+        WebElement searchField =wait.until(ExpectedConditions.visibilityOf(typePhone));
+
+        searchField.clear();
+        searchField.sendKeys(phone);
+    }
 
     public boolean isEmployeeDisplayed(String name) {By employeeRow = By.xpath("//div[@class='table-wrapper']//tr[.//*[normalize-space(.)='"+ name + "']]");
+        try {
+            wait.until(ExpectedConditions.visibilityOfElementLocated(employeeRow));
+            return true;
+        } catch (org.openqa.selenium.TimeoutException e) {
+            return false;
+        }
+    }
+    public boolean isEmployeeEmailDisplayed(String email) {By employeeRow = By.xpath("//div[@class='table-wrapper']//tr[.//*[normalize-space(.)='"+ email + "']]");
+        try {
+            wait.until(ExpectedConditions.visibilityOfElementLocated(employeeRow));
+            return true;
+        } catch (org.openqa.selenium.TimeoutException e) {
+            return false;
+        }
+    }
+    public boolean isEmployeePhoneDisplayed(String phone) {By employeeRow = By.xpath("//div[@class='table-wrapper']//tr[.//*[normalize-space(.)='"+ phone + "']]");
         try {
             wait.until(ExpectedConditions.visibilityOfElementLocated(employeeRow));
             return true;
